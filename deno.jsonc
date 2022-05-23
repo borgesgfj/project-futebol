@@ -30,6 +30,8 @@
     }
   },
   "tasks": {
-    "start:dev": "deno run -A --unstable --no-check src/colector/colector.ts"
+    "start:colect": "deno run -A --unstable --no-check src/colector/colector.ts",
+    "start:db": "docker-compose up -d",
+    "migrate": "deno run -A --unstable --no-check src/db/db-module/db-sync.ts"
   }
 }

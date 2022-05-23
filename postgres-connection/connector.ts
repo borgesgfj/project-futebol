@@ -5,7 +5,7 @@ const connector = new PostgresConnector({
   host: 'localhost',
   username: 'dev',
   password: 'soccer',
-  port: 5432,
+  port: 5433,
 });
 
 export const dataBase = new Database(connector)
